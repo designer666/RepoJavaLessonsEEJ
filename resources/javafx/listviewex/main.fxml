@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.listviewex.controller.MainController">
+   <children>
+      <AnchorPane prefHeight="279.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="lstWorkspace" layoutX="-1.0" prefHeight="282.0" prefWidth="590.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="212.0" prefWidth="600.0">
+         <children>
+            <GridPane layoutY="107.0" prefHeight="55.0" prefWidth="590.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="100.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnadd" mnemonicParsing="false" onAction="#onClickNewDataButton" prefHeight="26.0" prefWidth="299.0" text="Добавить" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="fldNewData" GridPane.columnIndex="1" />
+                  <Label prefHeight="16.0" prefWidth="303.0" text="Новый элемент списка" />
+                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#onClickDeleteDataButton" prefHeight="26.0" prefWidth="294.0" text="Удалить" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
