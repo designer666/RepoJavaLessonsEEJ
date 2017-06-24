@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 /**
  * Created by kyojin on 18.06.17.
- *
  */
 public class ArrayH01 {
 
